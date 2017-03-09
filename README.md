@@ -1,8 +1,6 @@
-# Java Hello World Sample
+# CDI SSO Enablement Sample
 
-This project contains a simple servlet application.
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/java-helloworld)
+This project contains a simple servlet application binded with IBM Single Sign On service.
 
 ## Running the application using the command-line
 
@@ -10,7 +8,7 @@ This project can be built with [Apache Maven](http://maven.apache.org/). The pro
 
 Use the following steps to run the application locally:
 
-1. Execute full Maven build to create the `target/JavaHelloWorldApp.war` file:
+1. Execute full Maven build to create the `target/cdi-sso.war` file:
     ```bash
     $ mvn clean install
     ```
@@ -20,11 +18,11 @@ Use the following steps to run the application locally:
     $ mvn liberty:run-server
     ```
 
-    Once the server is running, the application will be available under [http://localhost:9080/JavaHelloWorldApp](http://localhost:9080/JavaHelloWorldApp).
+    Once the server is running, the application will be available under [http://localhost:9080](http://localhost:9080).
 
 Use the following command to run the built application in Bluemix:
     ```bash
-    $ cf push <appname> -p target/JavaHelloWorldApp.war
+    $ cf push <appname> -p target/cdi-sso.war
     ```
 ## Developing and Deploying using Eclipse
 
@@ -43,9 +41,9 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
   - Continue the wizard with default options to Finish
 
 4. Run your application locally on Liberty:
-  - Right click on the `JavaHelloWorldApp` sample and select `Run As` -> `Run on Server` option
+  - Right click on the `cdi-sso` sample and select `Run As` -> `Run on Server` option
   - Find and select the localhost Liberty server and press `Finish`
-  - In a few seconds, your application should be running at http://localhost:9080/JavaHelloWorldApp/
+  - In a few seconds, your application should be running at http://localhost:9080/
 
 5. Create a Bluemix server definition:
   - In the `Servers` view, right-click -> `New` -> `Server`
@@ -54,13 +52,7 @@ IBM® Eclipse Tools for Bluemix® provides plug-ins that can be installed into a
   - Select your `org` and `space` and click `Finish`
 
 6. Run your application on Bluemix:
-  - Right click on the `JavaHelloWorldApp` sample and select `Run As` -> `Run on Server` option
+  - Right click on the `cdi-sso` sample and select `Run As` -> `Run on Server` option
   - Find and select the `IBM Bluemix` and press `Finish`
   - A wizard will guide you with the deployment options. Be sure to choose a unique `Name` for your application
   - In a few minutes, your application should be running at the URL you chose.
-
-## Liberty App Accelerator
-
-For help generating other Liberty samples checkout the Liberty App Accelerator at [wasdev.net/accelerate](http://wasdev.net/accelerate)
-
-[Liberty Maven Plug-in]: https://github.com/WASdev/ci.maven
