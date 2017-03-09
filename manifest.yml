@@ -1,6 +1,6 @@
 applications:
-- path: target/JavaHelloWorldApp.war
-  memory: 512M
+- path: target/cdi-sso.war
+  memory: 256M
   instances: 1
   domain: mybluemix.net
   name: cdi-sso
