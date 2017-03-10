@@ -7,7 +7,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns
     <display-name>CDISSO</display-name>
     <web-resource-collection>
         <web-resource-name>SsoServlet</web-resource-name>
-        <url-pattern>/SsoServlet/*</url-pattern>
+        <url-pattern>/SsoServlet</url-pattern>
         <http-method>GET</http-method>
     </web-resource-collection>
     <auth-constraint>

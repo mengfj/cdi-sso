@@ -2,10 +2,9 @@ applications:
 - path: target/cdi-sso.war
   memory: 256M
   instances: 1
-  domain: mybluemix.net
-  name: cdi-sso
-  host: cdi-sso
+  domain: ibm-gts.us-south.mybluemix.net
+  name: cdi-sso-app
+  host: cdi-sso-app
   disk_quota: 1024M
   services:
-  - availability-monitoring-auto
   - CDI-SSO
